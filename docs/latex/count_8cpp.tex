@@ -1,0 +1,99 @@
+\doxysection{Файл count.\+cpp}
+\hypertarget{count_8cpp}{}\label{count_8cpp}\index{count.cpp@{count.cpp}}
+
+
+Файл с описаниями вычислительных функий  
+
+
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include "{}qstring.\+h"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{count_8cpp_a7d54d78fcf16220861c323eb9a059b27}{counter}} (double num1, char opera, double num2, std\+::deque$<$ char $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mainwindow_8cpp_a77852d27993564425893f0e63d3da436}{story\+\_\+operation}}, std\+::deque$<$ double $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mainwindow_8cpp_a9440003ebd702b40b591e934391c0a8c}{story\+\_\+equal\+\_\+num}}, int \mbox{\hyperlink{mainwindow_8cpp_a84b9d4aaadd54950238abfe3c5ad3ab4}{show\+\_\+size}})
+\begin{DoxyCompactList}\small\item\em Функция, проводящая вычисление и записывающая операцию вычисления и результат вычисления в соответствующие деки \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{count_8cpp_abbde4cbef290f8460f4628bdb96ae589}{valid\+\_\+operation}} (char operation)
+\begin{DoxyCompactList}\small\item\em Функция, проверяющая операцию вычисления на валидность \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{count_8cpp_a110c6fc776d5705941028c2826198e17}{calcul}} (int i, std\+::deque$<$ double $>$ \mbox{\hyperlink{mainwindow_8cpp_a8067a69d5f3ba5dac93384b1b7ee6008}{story\+\_\+first\+\_\+num}}, std\+::deque$<$ char $>$ \mbox{\hyperlink{mainwindow_8cpp_a77852d27993564425893f0e63d3da436}{story\+\_\+operation}}, std\+::deque$<$ double $>$ \mbox{\hyperlink{mainwindow_8cpp_a91ca96d8d532f39c5b497b61a47187a3}{story\+\_\+second\+\_\+num}}, std\+::deque$<$ double $>$ \mbox{\hyperlink{mainwindow_8cpp_a9440003ebd702b40b591e934391c0a8c}{story\+\_\+equal\+\_\+num}})
+\begin{DoxyCompactList}\small\item\em Функиция, связывающая данные из деков истории вычислений в строку QString. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл с описаниями вычислительных функий 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{count_8cpp_a110c6fc776d5705941028c2826198e17}\label{count_8cpp_a110c6fc776d5705941028c2826198e17} 
+\index{count.cpp@{count.cpp}!calcul@{calcul}}
+\index{calcul@{calcul}!count.cpp@{count.cpp}}
+\doxysubsubsection{\texorpdfstring{calcul()}{calcul()}}
+{\footnotesize\ttfamily QString calcul (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{std\+::deque$<$ double $>$}]{story\+\_\+first\+\_\+num,  }\item[{std\+::deque$<$ char $>$}]{story\+\_\+operation,  }\item[{std\+::deque$<$ double $>$}]{story\+\_\+second\+\_\+num,  }\item[{std\+::deque$<$ double $>$}]{story\+\_\+equal\+\_\+num }\end{DoxyParamCaption})}
+
+
+
+Функиция, связывающая данные из деков истории вычислений в строку QString. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em i} & Индекс номера вычисления \\
+\hline
+{\em story\+\_\+first\+\_\+num} & Дек с первыми числами в вычислениях \\
+\hline
+{\em story\+\_\+operation} & Дек с операциями вычислений \\
+\hline
+{\em story\+\_\+second\+\_\+num} & Дек со вторыми числами в вычислениях \\
+\hline
+{\em story\+\_\+equal\+\_\+num} & Дек с результатами вычислений \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Возвращает строку QString вычисление в случае валидной операции или строку "{}..."{} в случае невалидной операции 
+\end{DoxyReturn}
+\Hypertarget{count_8cpp_a7d54d78fcf16220861c323eb9a059b27}\label{count_8cpp_a7d54d78fcf16220861c323eb9a059b27} 
+\index{count.cpp@{count.cpp}!counter@{counter}}
+\index{counter@{counter}!count.cpp@{count.cpp}}
+\doxysubsubsection{\texorpdfstring{counter()}{counter()}}
+{\footnotesize\ttfamily QString counter (\begin{DoxyParamCaption}\item[{double}]{num1,  }\item[{char}]{opera,  }\item[{double}]{num2,  }\item[{std\+::deque$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{story\+\_\+operation,  }\item[{std\+::deque$<$ double $>$ \texorpdfstring{$\ast$}{*}}]{story\+\_\+equal\+\_\+num,  }\item[{int}]{show\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Функция, проводящая вычисление и записывающая операцию вычисления и результат вычисления в соответствующие деки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em num1} & Первое число вычисления \\
+\hline
+{\em opera} & Операция вычисления \\
+\hline
+{\em num2} & Второе число вычисления \\
+\hline
+{\em story\+\_\+operation} & Дек с операциями вычислений \\
+\hline
+{\em story\+\_\+equal\+\_\+num} & Дек с результатами вычислений \\
+\hline
+{\em show\+\_\+size} & Глобальная переменная, определяющая количество цифр, до перехода в экспоненциальную нотацию \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Возвращает строку QString с результатом вычисления 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Переменная, в которую записывается результат вычисления\Hypertarget{count_8cpp_abbde4cbef290f8460f4628bdb96ae589}\label{count_8cpp_abbde4cbef290f8460f4628bdb96ae589} 
+\index{count.cpp@{count.cpp}!valid\_operation@{valid\_operation}}
+\index{valid\_operation@{valid\_operation}!count.cpp@{count.cpp}}
+\doxysubsubsection{\texorpdfstring{valid\_operation()}{valid\_operation()}}
+{\footnotesize\ttfamily bool valid\+\_\+operation (\begin{DoxyParamCaption}\item[{char}]{operation }\end{DoxyParamCaption})}
+
+
+
+Функция, проверяющая операцию вычисления на валидность 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em operation} & Операция вычисления \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Возвращает true или false 
+\end{DoxyReturn}

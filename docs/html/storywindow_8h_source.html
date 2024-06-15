@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Исходный файл storywindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">storywindow.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="storywindow_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef STORYWINDOW_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define STORYWINDOW_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QKeyEvent&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;deque&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span><a class="code hl_class" href="class_story_window.html">StoryWindow</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_story_window.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="class_story_window.html">StoryWindow</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Q_OBJECT</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="class_story_window.html">StoryWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_function" href="class_story_window.html#ae3ed7accdadbdeeb1900d7b694a21a7f">~StoryWindow</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_story_window.html#a7d3ebfa68fd8ea91b332b167007341f8">keyPressEvent</a>(QKeyEvent *es) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    Ui::StoryWindow *ui;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_story_window.html#ac720dc3443f404251d3319438cdd6546">slot</a>(std::deque&lt;double&gt; <a class="code hl_function" href="mainwindow_8cpp.html#a8067a69d5f3ba5dac93384b1b7ee6008">story_first_num</a>, std::deque&lt;char&gt; <a class="code hl_function" href="mainwindow_8cpp.html#a77852d27993564425893f0e63d3da436">story_operation</a>, std::deque&lt;double&gt; <a class="code hl_function" href="mainwindow_8cpp.html#a91ca96d8d532f39c5b497b61a47187a3">story_second_num</a>, std::deque&lt;double&gt; <a class="code hl_function" href="mainwindow_8cpp.html#a9440003ebd702b40b591e934391c0a8c">story_equal_num</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif </span><span class="comment">// STORYWINDOW_H</span></div>
+<div class="ttc" id="aclass_story_window_html"><div class="ttname"><a href="class_story_window.html">StoryWindow</a></div><div class="ttdef"><b>Definition</b> storywindow.h:19</div></div>
+<div class="ttc" id="aclass_story_window_html_a7d3ebfa68fd8ea91b332b167007341f8"><div class="ttname"><a href="class_story_window.html#a7d3ebfa68fd8ea91b332b167007341f8">StoryWindow::keyPressEvent</a></div><div class="ttdeci">void keyPressEvent(QKeyEvent *es) override</div><div class="ttdoc">Функция, связывающая физическую клавиатуру с кнопками графического интерфейса</div><div class="ttdef"><b>Definition</b> storywindow.cpp:42</div></div>
+<div class="ttc" id="aclass_story_window_html_ac720dc3443f404251d3319438cdd6546"><div class="ttname"><a href="class_story_window.html#ac720dc3443f404251d3319438cdd6546">StoryWindow::slot</a></div><div class="ttdeci">void slot(std::deque&lt; double &gt; story_first_num, std::deque&lt; char &gt; story_operation, std::deque&lt; double &gt; story_second_num, std::deque&lt; double &gt; story_equal_num)</div><div class="ttdoc">Слот, утранавливающий в лейблы окна истории вычислений результаты последних 6 вычислений</div><div class="ttdef"><b>Definition</b> storywindow.cpp:58</div></div>
+<div class="ttc" id="aclass_story_window_html_ae3ed7accdadbdeeb1900d7b694a21a7f"><div class="ttname"><a href="class_story_window.html#ae3ed7accdadbdeeb1900d7b694a21a7f">StoryWindow::~StoryWindow</a></div><div class="ttdeci">~StoryWindow()</div><div class="ttdoc">Деструктор экземпляра класса MainWindow.</div><div class="ttdef"><b>Definition</b> storywindow.cpp:31</div></div>
+<div class="ttc" id="amainwindow_8cpp_html_a77852d27993564425893f0e63d3da436"><div class="ttname"><a href="mainwindow_8cpp.html#a77852d27993564425893f0e63d3da436">story_operation</a></div><div class="ttdeci">std::deque&lt; char &gt; story_operation(6)</div><div class="ttdoc">Глобальный дек, содержащий информацию об операции</div></div>
+<div class="ttc" id="amainwindow_8cpp_html_a8067a69d5f3ba5dac93384b1b7ee6008"><div class="ttname"><a href="mainwindow_8cpp.html#a8067a69d5f3ba5dac93384b1b7ee6008">story_first_num</a></div><div class="ttdeci">std::deque&lt; double &gt; story_first_num(6)</div><div class="ttdoc">Глобальный дек, содержащий первые номера в операциях</div></div>
+<div class="ttc" id="amainwindow_8cpp_html_a91ca96d8d532f39c5b497b61a47187a3"><div class="ttname"><a href="mainwindow_8cpp.html#a91ca96d8d532f39c5b497b61a47187a3">story_second_num</a></div><div class="ttdeci">std::deque&lt; double &gt; story_second_num(6)</div><div class="ttdoc">Глобальный дек, содержащий вторые номера в операциях</div></div>
+<div class="ttc" id="amainwindow_8cpp_html_a9440003ebd702b40b591e934391c0a8c"><div class="ttname"><a href="mainwindow_8cpp.html#a9440003ebd702b40b591e934391c0a8c">story_equal_num</a></div><div class="ttdeci">std::deque&lt; double &gt; story_equal_num(6)</div><div class="ttdoc">Глобальный дек, содержащий результаты операций</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Исходный файл count.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">count.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="count_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef COUNT_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define COUNT_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;deque&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;qstring.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>QString <a class="code hl_function" href="count_8h.html#a7d54d78fcf16220861c323eb9a059b27">counter</a>(<span class="keywordtype">double</span> num1, <span class="keywordtype">char</span> opera, <span class="keywordtype">double</span> num2, std::deque&lt;char&gt; * <a class="code hl_function" href="mainwindow_8cpp.html#a77852d27993564425893f0e63d3da436">story_operation</a>, std::deque&lt;double&gt; * <a class="code hl_function" href="mainwindow_8cpp.html#a9440003ebd702b40b591e934391c0a8c">story_equal_num</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="mainwindow_8cpp.html#a84b9d4aaadd54950238abfe3c5ad3ab4">show_size</a>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">bool</span> <a class="code hl_function" href="count_8h.html#abbde4cbef290f8460f4628bdb96ae589">valid_operation</a>(<span class="keywordtype">char</span> operation);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>QString <a class="code hl_function" href="count_8h.html#a110c6fc776d5705941028c2826198e17">calcul</a>(<span class="keywordtype">int</span> i, std::deque&lt;double&gt; <a class="code hl_function" href="mainwindow_8cpp.html#a8067a69d5f3ba5dac93384b1b7ee6008">story_first_num</a>, std::deque&lt;char&gt; <a class="code hl_function" href="mainwindow_8cpp.html#a77852d27993564425893f0e63d3da436">story_operation</a>, std::deque&lt;double&gt; <a class="code hl_function" href="mainwindow_8cpp.html#a91ca96d8d532f39c5b497b61a47187a3">story_second_num</a>, std::deque&lt;double&gt; <a class="code hl_function" href="mainwindow_8cpp.html#a9440003ebd702b40b591e934391c0a8c">story_equal_num</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif </span><span class="comment">// COUNT_H</span></div>
+<div class="ttc" id="acount_8h_html_a110c6fc776d5705941028c2826198e17"><div class="ttname"><a href="count_8h.html#a110c6fc776d5705941028c2826198e17">calcul</a></div><div class="ttdeci">QString calcul(int i, std::deque&lt; double &gt; story_first_num, std::deque&lt; char &gt; story_operation, std::deque&lt; double &gt; story_second_num, std::deque&lt; double &gt; story_equal_num)</div><div class="ttdoc">Функиция, связывающая данные из деков истории вычислений в строку QString.</div><div class="ttdef"><b>Definition</b> count.cpp:102</div></div>
+<div class="ttc" id="acount_8h_html_a7d54d78fcf16220861c323eb9a059b27"><div class="ttname"><a href="count_8h.html#a7d54d78fcf16220861c323eb9a059b27">counter</a></div><div class="ttdeci">QString counter(double num1, char opera, double num2, std::deque&lt; char &gt; *story_operation, std::deque&lt; double &gt; *story_equal_num, int show_size)</div><div class="ttdoc">Функция, проводящая вычисление и записывающая операцию вычисления и результат вычисления в соответств...</div><div class="ttdef"><b>Definition</b> count.cpp:24</div></div>
+<div class="ttc" id="acount_8h_html_abbde4cbef290f8460f4628bdb96ae589"><div class="ttname"><a href="count_8h.html#abbde4cbef290f8460f4628bdb96ae589">valid_operation</a></div><div class="ttdeci">bool valid_operation(char operation)</div><div class="ttdoc">Функция, проверяющая операцию вычисления на валидность</div><div class="ttdef"><b>Definition</b> count.cpp:64</div></div>
+<div class="ttc" id="amainwindow_8cpp_html_a77852d27993564425893f0e63d3da436"><div class="ttname"><a href="mainwindow_8cpp.html#a77852d27993564425893f0e63d3da436">story_operation</a></div><div class="ttdeci">std::deque&lt; char &gt; story_operation(6)</div><div class="ttdoc">Глобальный дек, содержащий информацию об операции</div></div>
+<div class="ttc" id="amainwindow_8cpp_html_a8067a69d5f3ba5dac93384b1b7ee6008"><div class="ttname"><a href="mainwindow_8cpp.html#a8067a69d5f3ba5dac93384b1b7ee6008">story_first_num</a></div><div class="ttdeci">std::deque&lt; double &gt; story_first_num(6)</div><div class="ttdoc">Глобальный дек, содержащий первые номера в операциях</div></div>
+<div class="ttc" id="amainwindow_8cpp_html_a84b9d4aaadd54950238abfe3c5ad3ab4"><div class="ttname"><a href="mainwindow_8cpp.html#a84b9d4aaadd54950238abfe3c5ad3ab4">show_size</a></div><div class="ttdeci">int show_size</div><div class="ttdoc">Глобальная переменная, определяющая количество цифр, до перехода в экспоненциальную нотацию</div><div class="ttdef"><b>Definition</b> mainwindow.cpp:17</div></div>
+<div class="ttc" id="amainwindow_8cpp_html_a91ca96d8d532f39c5b497b61a47187a3"><div class="ttname"><a href="mainwindow_8cpp.html#a91ca96d8d532f39c5b497b61a47187a3">story_second_num</a></div><div class="ttdeci">std::deque&lt; double &gt; story_second_num(6)</div><div class="ttdoc">Глобальный дек, содержащий вторые номера в операциях</div></div>
+<div class="ttc" id="amainwindow_8cpp_html_a9440003ebd702b40b591e934391c0a8c"><div class="ttname"><a href="mainwindow_8cpp.html#a9440003ebd702b40b591e934391c0a8c">story_equal_num</a></div><div class="ttdeci">std::deque&lt; double &gt; story_equal_num(6)</div><div class="ttdoc">Глобальный дек, содержащий результаты операций</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

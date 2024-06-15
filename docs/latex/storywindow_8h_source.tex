@@ -1,0 +1,37 @@
+\doxysection{storywindow.\+h}
+\hypertarget{storywindow_8h_source}{}\label{storywindow_8h_source}\mbox{\hyperlink{storywindow_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ STORYWINDOW\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ STORYWINDOW\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QKeyEvent>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <deque>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_story_window}{StoryWindow}};}
+\DoxyCodeLine{00016\ \}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_story_window}{StoryWindow}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_story_window}{StoryWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_story_window_ae3ed7accdadbdeeb1900d7b694a21a7f}{\string~StoryWindow}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_story_window_a7d3ebfa68fd8ea91b332b167007341f8}{keyPressEvent}}(QKeyEvent\ *es)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ Ui::StoryWindow\ *ui;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_story_window_ac720dc3443f404251d3319438cdd6546}{slot}}(std::deque<double>\ \mbox{\hyperlink{mainwindow_8cpp_a8067a69d5f3ba5dac93384b1b7ee6008}{story\_first\_num}},\ std::deque<char>\ \mbox{\hyperlink{mainwindow_8cpp_a77852d27993564425893f0e63d3da436}{story\_operation}},\ std::deque<double>\ \mbox{\hyperlink{mainwindow_8cpp_a91ca96d8d532f39c5b497b61a47187a3}{story\_second\_num}},\ std::deque<double>\ \mbox{\hyperlink{mainwindow_8cpp_a9440003ebd702b40b591e934391c0a8c}{story\_equal\_num}});}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ STORYWINDOW\_H}}
+
+\end{DoxyCode}
